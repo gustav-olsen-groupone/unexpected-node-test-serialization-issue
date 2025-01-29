@@ -1,6 +1,8 @@
 # Reproduction of UnexpectedError serialization issue with node:test
 
-When running unexpected with the new built-in test runner in node.js the errors are not serialized properly.
+When running unexpected with the new built-in test runner in node.js using its
+default spec reporter the errors are not serialized properly. The issue is not
+seen when using the tap reporter.
 
 To reproduce the issue run:
 
